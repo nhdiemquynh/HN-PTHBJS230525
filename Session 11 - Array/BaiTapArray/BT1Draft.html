@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+// Cho người dùng nhập vào một số, kiểm tra xem số đó có phải là số nguyên tố không
+let input = parseInt(prompt("Nhập vào một số bất kỳ"));
+let check = false;
+if (input < 2) {
+    console.log("Day khong phai la so nguyen to");
+} else {
+    for (let i = 2; i<input; i++) {
+        if (input % i == 0) {
+            check = true;
+        }
+    }
+}
+
+</script>
+</html>
