@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let courses = [
+    {id: 1, courseName: 'HTML', complete: false},
+    {id: 2, courseName: 'CSS', complete: false},
+    {id: 3, courseName: 'Basic of Javascript', complete: false},
+    {id: 4, courseName: 'NPM', complete: false},
+    {id: 5, courseName: 'Git', complete: false},
+];
+render();
+// In dữ liệu
+function render() {
+    for (let i = 0; i < courses.length; i++) {
+        console.log(`${i+1}.${courses[i].name}`);
+        console.log(`Complete:${courses[i].complete}`);
+    }
+}
+
+// Cho người dùng nhập vào CRUDE
+let input = prompt('Nhập vào C/R/U/D/E').toUpperCase();
+if(input == 'C') {
+    // Cho người dùng nhập vào tên khoá học mới
+    let addNameCourse = prompt('Vui lòng nhập tên khoá học muốn thêm').toUpperCase();
+    // Khai báo 1 đối tượng khoá học chứa các thuộc tính id, courseName, complete
+    let addCourse = {
+        id: Math.floor(Math.random() * 10000),
+        courseName: addNameCourse,
+        complete: false,
+    };
+// Thêm đối tượng vừa tạo vào mảng courses (các khoá học có sẵn)
+    courses.push(addCourse);
+    console.log('Sau khi thêm khoá học');
+    render();
+} else if (input == 'R') {
+    console.log('In lại danh sách khoá học');
+    render();
+} else if (input == 'U') {
+    let inputUpdate = Number(prompt('Nhập vào vị trí muốn update'));
+        if(inputUpdate-1 < courses.length && 0<inputUpdate-1) {
+            console.log('Đã tìm thấy');
+        } else {
+            console.log('Không tìm thấy');
+        };
+    let updateNameCourse = prompt('Nhập vào tên khoá học muốn update').toUpperCase();
+    // inputUpdate-1 chính là vị trí index của khoá học muốn sửa trong mảng khoá học
+        courses[inputUpdate-1].courseName = updateNameCourse;
+    // Update luôn complete thành true
+        courses[inputUpdate-1].complete = true;
+        
+} else if (input == 'D') {
+} else if (input == 'E') {
+}else {
+    alert('Xin vui lòng nhập lại');
+}
+</script>
+</html>

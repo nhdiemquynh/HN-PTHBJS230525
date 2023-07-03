@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// B1: Tạo một đối tượng staff và thêm chúng vào mảng company
+    let staff = {
+        id: 1,
+        name:'Duc',
+        age: 20,
+        salary: 1000,
+    };
+
+    let company =[];
+    company.push(staff);
+    console.log(company);
+// B2: Thêm mới nhân viên vào trong mảng company
+    let staff2 = {
+        id: 2,
+        name: 'Duc',
+        age: 20,
+        salary: 1000,
+    };
+    company.unshift(staff2);
+    console.log(company);
+
+// B3: Cập nhập thông tin salary cho nhân viên đó thông qua ID
+    // staff2.salary = 2500;
+    // console.log(staff2);
+    // 3.1: Tìm vị trí của người có ID: 2 trong mảng company
+    // 3.2: Truy cập đến salary và update giá lên 5000
+    // for (let i = 0; i < company.length; i++) {
+    //     if (company[i].id==2){
+    //         company[i].salary = 5000;
+    //     }
+    // }
+    // console.log('Sau khi update luong cho id 2', company);
+
+    // Cách 2: Sử dụng findIndex
+    let inputUpdate = Number(prompt('Nhập vào ID mong muốn update'));
+    let salaryUpdate = Number(prompt('Nhập vào số lương muốn update'));
+    let a = company.findIndex((element) => inputUpdate == element.id);
+    console.log(a);
+    company[a].salary = salaryUpdate;
+    // a là chỉ số index của phần tử muốn tìm
+
+// B4: Xoá nhân viên có ID:1 trong mảng company
+// for (let i = 0; i < company.length; i++) {
+//         if (company[i].id==1){
+//             company.splice(i,1);
+//         }
+//     }
+//     console.log('Sau khi xoa id 1', company);
+</script>
+</html>
