@@ -57,9 +57,9 @@
 // demo1.style.display = 'none';
 
 // 3. Event (Sự kiện)
-let demo1 = document.getElementById('demo-1');
-let btnChange = document.getElementById('btn-change');
-console.log(btnChange, demo1);
+// let demo1 = document.getElementById('demo-1');
+// let btnChange = document.getElementById('btn-change');
+// console.log(btnChange, demo1);
 
 // Bài Toán: Khi click button change thì:
 // 1. Đổi text chữ Demo1 -> Xin chào các bạn
@@ -73,8 +73,44 @@ console.log(btnChange, demo1);
 //     demo1.style.fontSize = "50px";
 // };
 
-function handleClick(){
-    demo1.innerText = "Xin chào các bạn";
-    demo1.style.color = "red";
-    demo1.style.fontSize = "50px";
-}
+// function handleClick(){
+//     demo1.innerText = "Xin chào các bạn";
+//     demo1.style.color = "red";
+//     demo1.style.fontSize = "50px";
+// }
+
+// 4. Xoá và tạo mới phần tử HTML
+// 4.1 Xoá phần tử HTML
+// let containerE = document.getElementById("container");
+// let demo1E = document.getElementById("demo-1");
+// Xoá phần tử demo-1 trong phần tử container
+// containerE.removeChild(demo1E);
+
+// let btnChange = document.getElementById("btn-change");
+// Xoá trực tiếp phần tử đó thông qua phương thức remove()
+// btnChange.remove();
+
+// 4.2 Tạo mới phần tử HTML
+// Tạo mới thẻ div
+// let div = document.createElement("div");
+// console.log(div);
+
+// // Tạo attribute id = demo-4
+// div.setAttribute('id','demo-4');
+// // Thêm content có nội dung là Demo-4
+// div.innerText = 'Demo-4';
+// console.log(div);
+// // Truy vấn thẻ container
+// let containerE = document.getElementById('container');
+
+// // Thêm div vào trong container thông qua phương thức appendChild
+// // Cú pháp: parent.appendChild(child)
+// containerE.appendChild(div);
+
+// ParentElement và Children 
+let demo1 = document.getElementById('demo-1');
+console.log(demo1);
+// Truy vấn đến thẻ cha của demo1
+console.log(demo1.parentElement.parentElement);
+// Truy vấn đến thẻ con của demo1
+console.log(demo1.children[0].innerHTML);
