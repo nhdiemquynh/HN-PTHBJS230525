@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    height: 100px;
+    background-color: black;
+  }
+  header p{
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+  }
+  header p a{
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+  }
+  nav{
+    width: 100%;
+  }
+  #logo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  #logo>img{
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    display: block;
+    width: 120px !important;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .language{
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+  .language img{
+    width: 24px;
+    height: 24px;
+    transform: translateY(6px);
+  }
+  .language a{
+    color: black;
+    padding: 0 10px;
+  }
+  .GjKQn{
+    margin-top: 15px;
+    padding: 0 50px;
+  }
+  .gqDEdp button{
+    max-width: 100%;
+    position: relative;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+  }
+  .swiper-wrapper{
+    display: flex;
+    overflow: auto;
+  }
+  .swiper-slide a{
+    text-decoration: none;
+  }
+  .bVAoEa {
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.71429;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255);
+    padding: 0.3rem 1.25rem;
+    border-radius: 1.4375rem;
+    border: 1px solid rgb(203, 203, 203);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: border-color 0.25s ease 0s;
+  }
+  .iBJZwQ {
+      background-image: url(https://unicorn.lush.com/media/file_upload/Krabby_Bathy_7e02e037.jpg);
+      background-size: cover;
+      height: 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+  .enJllN {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    height: 600px;
+    margin-top: 10px;
+  }
+  .hxGRrY {
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transform: translate3d(0px, 0px, 0px);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .fUPNCK {
+      position: absolute;
+      top: 0px;
+      inset-inline-start: 0px;
+      background-color: black;
+      padding: 0.5rem 1.3rem;
+  }
+  .dohoMy {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-transform: none;
+    font-size: 1.75rem;
+    line-height: 1.357;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    font-family: hn-display, HelveticaNeue, Helvetica, helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  main{
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+  .head-main{
+    padding: 20px 0;
+  }
+
+  #products>div{
+    margin: 0 !important;
+  }
+
+  .productName {
+    font-family: handwritten, hn-display, HelveticaNeue, Helvetica, helvetica, sans-serif;
+  }
+
+  .bv_main_container {
+    display: flex;
+  }
+
+  .bv_main_container div {
+    margin-right: 3px;
+  }
